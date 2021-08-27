@@ -1,0 +1,23 @@
+{
+  "name": "aula_jquery_ajax",
+  "version": "1.0.0",
+  "description": "Curso de jQuery e ajax - DIO",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EricOliveiras/aula_jquery_ajax.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EricOliveiras/aula_jquery_ajax/issues"
+  },
+  "homepage": "https://github.com/EricOliveiras/aula_jquery_ajax#readme",
+  "dependencies": {
+    "jquery": "^3.6.0"
+  }
+}
