@@ -1,11 +1,16 @@
-import $ from 'jquery';
 
 function consultaCep() {
+
+    const cep = document.getElementById('cep').value
+    const url = 'https://viacep.com.br/ws/' + cep  + '/json/'
+
     $.ajax({
-        url: 'https://viacep.com.br/ws/67145310/json/',
+        url: url,
         type: 'GET',
         success: function(response) {
             console.log(response)
+            $('#logradouro').html(response.logradouro)
         }
     })
+
 }
