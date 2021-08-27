@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/EricOliveiras/aula_jquery_ajax#readme",
   "dependencies": {
+    "bootstrap": "^5.1.0",
     "jquery": "^3.6.0"
   }
 }

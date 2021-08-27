@@ -3,13 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <title>Minha página</title>
+    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    
 </head>
 <body>
-    <input type="text" id="cep">
-    <button type="button" onclick="consultaCep()">Consultar CEP</button>
-    <p id="logradouro"></p>
-
-<script src="js/main.js"></script>
+    <nav class="navbar navbar-light bg-dark">
+        <div class="container-fluid">
+            <p class="navbar-brand text-white">Consulta CEP</p>
+            <div class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Insira o CEP" aria-label="Search" id="cep">
+                <button class="btn btn-outline-success" onclick="consultaCep()">Consultar</button>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container cep">
+        <div class="row">
+            <h3 id="titulo_cep">CEP</h3>
+        </div>
+        <div class="row">
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td>Estado</td>
+                        <td id="uf"></td>
+                    </tr>
+                    <tr>
+                        <td>Cidade</td>
+                        <td id="localidade"></td>
+                    </tr>
+                    <tr>
+                        <td>Bairro</td>
+                        <td id="bairro"></td>
+                    </tr>
+                    <tr>
+                        <td>Logradouro</td>
+                        <td id="logradouro"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
 <script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
